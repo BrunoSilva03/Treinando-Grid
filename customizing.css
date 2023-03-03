@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 1rem;
+
+    grid-template-areas: 
+    "header header header header"
+    "main   main   main   aside"
+    "footer footer footer footer"
+
+    ;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.wrapper > * {
+    background-color: darkblue;
+    color: white;
+}
+
+.wrapper > *:nth-child(even) {
+    background-color: skyblue;
+    color: white;
+}
