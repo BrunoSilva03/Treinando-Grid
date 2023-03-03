@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 3rem;
+}
+
+div {
+    background-color:darkblue;
+}
+
+div:nth-child(odd) {
+    background-color: skyblue;
+}
