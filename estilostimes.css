@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+}
